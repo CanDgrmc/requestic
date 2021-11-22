@@ -6,12 +6,14 @@ class Options {
     parseJson;
     model;
     arrayModel;
+    jsonModel;
 
-    constructor({headers, parseJson, model, arrayModel}) {
+    constructor({headers, parseJson, model, arrayModel, jsonModel}) {
         this.headers = headers;
-        this.parseJson = parseJson || true;
+        this.parseJson = parseJson != undefined ? parseJson : true;
         this.model = model;
         this.arrayModel = arrayModel;
+        this.jsonModel = jsonModel
     }
 }
 

@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/mocha/bin/mocha --timeout 10000 test/index.js",
     "docs": "./node_modules/jsdoc/jsdoc.js -c ./.jsdoc.conf.json"
   },
   "author": "Can Doğramacı",
   "license": "ISC",
   "devDependencies": {
-    "jsdoc": "^3.6.7"
+    "chai": "^4.3.4",
+    "jsdoc": "^3.6.7",
+    "mocha": "^9.1.3"
   }
 }
